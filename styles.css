@@ -1,0 +1,440 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; 
+    color: #e0e0e0; 
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #4a148c, #3949ab);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #4a148c, #3949ab);
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffeb3b; 
+}
+
+main {
+    padding: 2rem;
+}
+
+.summary .cards {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; 
+}
+
+.card {
+    background: #1e1e1e; 
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 1.5rem;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card p {
+    font-size: 1rem;
+    color: #bdbdbd;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #bb86fc; 
+    margin-top: 0.5rem;
+}
+
+.charts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.chart-container {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    height: 400px
+}
+
+.chart-container h3 {
+    color: #bb86fc; 
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: linear-gradient(135deg, #4a148c, #3949ab);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+table th,
+table td {
+    border: 1px solid #333;
+    padding: 0.8rem 1rem;
+    text-align: left;
+    color: #e0e0e0;
+}
+
+table th {
+    background: #333;
+    color: #bb86fc;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #252525;
+}
+
+table tbody tr:hover {
+    background-color: #333;
+}
+
+button {
+    background: linear-gradient(135deg, #4a148c, #3949ab);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #6a1b9a, #303f9f);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bb86fc;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 300px; 
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#searchInput:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(187, 134, 252, 0.6); 
+    transform: scale(1.02); 
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap; 
+}
+
+.filters label {
+    font-size: 1rem;
+    color: #bdbdbd;
+    font-weight: bold;
+}
+
+.filters select {
+    padding: 0.6rem 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.filters select:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(187, 134, 252, 0.6); 
+    transform: scale(1.02); 
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.pagination button {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+}
+
+.pagination #pageInfo {
+    font-size: 1rem;
+    color: #bb86fc;
+    font-weight: bold;
+}
+
+.form-section {
+    margin-bottom: 2rem;
+}
+
+.form-section h2 {
+    color: #bb86fc;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #bdbdbd;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+    padding: 0.8rem 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(187, 134, 252, 0.6);
+    transform: scale(1.02);
+}
+
+button[type="submit"] {
+    background: linear-gradient(135deg, #4a148c, #3949ab);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #6a1b9a, #303f9f);
+}
+
+.transactions-section {
+    margin-top: 2rem;
+}
+
+.transactions-section h2 {
+    color: #bb86fc;
+    margin-bottom: 1rem;
+}
+
+#recentTransactionsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#recentTransactionsTable th,
+#recentTransactionsTable td {
+    border: 1px solid #333;
+    padding: 0.8rem 1rem;
+    text-align: left;
+    color: #e0e0e0;
+}
+
+#recentTransactionsTable th {
+    background: #333;
+    color: #bb86fc;
+    font-weight: bold;
+}
+
+#recentTransactionsTable tbody tr:nth-child(even) {
+    background-color: #252525;
+}
+
+#recentTransactionsTable tbody tr:hover {
+    background-color: #333;
+}
+
+.json-section {
+    margin-top: 2rem;
+}
+
+.json-section h2 {
+    color: #bb86fc;
+    margin-bottom: 1rem;
+}
+
+#jsonDataDisplay {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #e0e0e0;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-height: 1000px;
+    overflow-y: auto;
+}
+
+#copyJsonButton {
+    background: linear-gradient(135deg, #4a148c, #3949ab);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 1rem;
+}
+
+#copyJsonButton:hover {
+    background: linear-gradient(135deg, #6a1b9a, #303f9f);
+}
+
+.financial-advice {
+    margin-top: 2rem;
+}
+
+.financial-advice h2 {
+    color: #bb86fc;
+    margin-bottom: 1rem;
+}
+
+.financial-advice p {
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+#generatePromptButton {
+    background: linear-gradient(135deg, #4a148c, #3949ab);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#generatePromptButton:hover {
+    background: linear-gradient(135deg, #6a1b9a, #303f9f);
+}
+
+#generatedPrompt {
+    width: 100%;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #e0e0e0;
+    font-family: 'Courier New', monospace;
+    margin-top: 1rem;
+}
+#copyPromptButton {
+    background: linear-gradient(135deg, #4a148c, #3949ab);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: 1rem;
+}
+
+#copyPromptButton:hover {
+    background: linear-gradient(135deg, #6a1b9a, #303f9f);
+}

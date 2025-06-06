@@ -1,0 +1,190 @@
+{
+  "saldoInicial": 99405.25,
+  "dataInicial": "2025-02-02",
+  "rendimentos": [
+    {
+      "nome": "Salário",
+      "valor": 35.76,
+      "data": "2024-07-01"
+    },
+    {
+      "nome": "Salário",
+      "valor": 1145.4,
+      "data": "2024-08-01"
+    }
+  ],
+  "transacoes": [
+    {
+      "nome": "Meo",
+      "valor": 64.99,
+      "data": "2024-05-05"
+    },
+    {
+      "nome": "Meo",
+      "valor": 64.99,
+      "data": "2024-06-05"
+    },
+    {
+      "nome": "Meo",
+      "valor": 64.99,
+      "data": "2024-07-05"
+    },
+    {
+      "nome": "Seguro",
+      "valor": 590.17,
+      "data": "2024-07-10"
+    }
+  ],
+  "previsaoDivida": [
+    {
+      "mesesRestantes": 29,
+      "dividaRestante": 14150.24,
+      "saldoPrevisto": 529.91
+    },
+    {
+      "mesesRestantes": 28,
+      "dividaRestante": 12997.47,
+      "saldoPrevisto": 1251.66
+    },
+    {
+      "mesesRestantes": 27,
+      "dividaRestante": 12565.79,
+      "saldoPrevisto": 966.83
+    },
+    {
+      "mesesRestantes": 26,
+      "dividaRestante": 12131.59,
+      "saldoPrevisto": 2367.94
+    },
+    {
+      "mesesRestantes": 25,
+      "dividaRestante": 11695.1,
+      "saldoPrevisto": 3002.15
+    },
+    {
+      "mesesRestantes": 24,
+      "dividaRestante": 11256.3,
+      "saldoPrevisto": 3652.15
+    },
+    {
+      "mesesRestantes": 23,
+      "dividaRestante": 10815.18,
+      "saldoPrevisto": 4302.15
+    },
+    {
+      "mesesRestantes": 22,
+      "dividaRestante": 10371.73,
+      "saldoPrevisto": 4952.15
+    },
+    {
+      "mesesRestantes": 21,
+      "dividaRestante": 9905.69,
+      "saldoPrevisto": 5602.15
+    },
+    {
+      "mesesRestantes": 20,
+      "dividaRestante": 9459.94,
+      "saldoPrevisto": 6252.15
+    },
+    {
+      "mesesRestantes": 19,
+      "dividaRestante": 9011.89,
+      "saldoPrevisto": 6902.15
+    },
+    {
+      "mesesRestantes": 18,
+      "dividaRestante": 8561.51,
+      "saldoPrevisto": 7552.15
+    },
+    {
+      "mesesRestantes": 17,
+      "dividaRestante": 8108.76,
+      "saldoPrevisto": 8202.15
+    },
+    {
+      "mesesRestantes": 16,
+      "dividaRestante": 7653.61,
+      "saldoPrevisto": 8852.15
+    },
+    {
+      "mesesRestantes": 15,
+      "dividaRestante": 7196.02,
+      "saldoPrevisto": 9502.15
+    },
+    {
+      "mesesRestantes": 14,
+      "dividaRestante": 6735.96,
+      "saldoPrevisto": 10152.15
+    },
+    {
+      "mesesRestantes": 13,
+      "dividaRestante": 6273.39,
+      "saldoPrevisto": 10802.15
+    },
+    {
+      "mesesRestantes": 12,
+      "dividaRestante": 5808.27,
+      "saldoPrevisto": 11452.15
+    },
+    {
+      "mesesRestantes": 11,
+      "dividaRestante": 5340.57,
+      "saldoPrevisto": 12102.15
+    },
+    {
+      "mesesRestantes": 10,
+      "dividaRestante": 4869.24,
+      "saldoPrevisto": 12752.15
+    },
+    {
+      "mesesRestantes": 9,
+      "dividaRestante": 4395.25,
+      "saldoPrevisto": 13402.15
+    },
+    {
+      "mesesRestantes": 8,
+      "dividaRestante": 3917.55,
+      "saldoPrevisto": 14052.15
+    },
+    {
+      "mesesRestantes": 7,
+      "dividaRestante": 3436.09,
+      "saldoPrevisto": 14702.15
+    },
+    {
+      "mesesRestantes": 6,
+      "dividaRestante": 2950.84,
+      "saldoPrevisto": 15352.15
+    },
+    {
+      "mesesRestantes": 5,
+      "dividaRestante": 2461.75,
+      "saldoPrevisto": 16002.15
+    },
+    {
+      "mesesRestantes": 4,
+      "dividaRestante": 1968.77,
+      "saldoPrevisto": 16652.15
+    },
+    {
+      "mesesRestantes": 3,
+      "dividaRestante": 1471.87,
+      "saldoPrevisto": 17302.15
+    },
+    {
+      "mesesRestantes": 2,
+      "dividaRestante": 971,
+      "saldoPrevisto": 17952.15
+    },
+    {
+      "mesesRestantes": 1,
+      "dividaRestante": 466.11,
+      "saldoPrevisto": 18602.15
+    },
+    {
+      "mesesRestantes": 0,
+      "dividaRestante": 0,
+      "saldoPrevisto": 19252.15
+    }
+  ]
+}

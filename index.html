@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Financeiro</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="package/dist/chart.umd.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="register.html">Registrar Despesas/Ganhos</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Dashboard Financeiro</h1>
+    </header>
+    <main>
+        <section class="summary">
+            <h2>Resumo Financeiro</h2>
+            <div class="cards">
+                <div class="card">
+                    <p>Saldo Total</p>
+                    <h3 id="totalBalance">€3405.25</h3>
+                </div>
+                <div class="card">
+                    <p>Ordenado Mensal</p>
+                    <h3 id="monthlyIncome">€1290</h3>
+                </div>
+                <div class="card">
+                    <p>Sobra Após Despesas</p>
+                    <h3 id="remainingAfterExpenses">€1530.51</h3>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <section class="financial-advice">
+            <h2>Obtenha Sugestões Financeiras Personalizadas</h2>
+            <p>Clique no botão abaixo para gerar um prompt personalizado com base nos seus dados financeiros.</p>
+            <button id="generatePromptButton">Gerar Prompt</button>
+            <button id="copyPromptButton">Copiar Prompt</button>
+            <textarea id="generatedPrompt" rows="10" readonly></textarea>
+            <p>Use o prompt acima no <a href="https://qwen.chat" target="_blank">Qwen Chat</a> para obter um relatório financeiro detalhado.</p>
+        </section>
+
+        <br>
+
+        <input type="text" id="searchInput" placeholder="Buscar por nome ou valor..." onkeyup="filterTable()">
+
+        <div class="filters">
+            <label for="typeFilter">Filtrar por tipo:</label>
+            <select id="typeFilter" onchange="filterTable()">
+                <option value="">Todos</option>
+                <option value="Despesa">Despesa</option>
+                <option value="Rendimento">Rendimento</option>
+            </select>
+        
+            <label for="yearFilter">Filtrar por ano:</label>
+            <select id="yearFilter" onchange="filterTable()">
+                <option value="">Todos</option>
+            </select>
+        
+            <label for="monthFilter">Filtrar por mês:</label>
+            <select id="monthFilter" onchange="filterTable()">
+                <option value="">Todos</option>
+                <option value="01">Janeiro</option>
+                <option value="02">Fevereiro</option>
+                <option value="03">Março</option>
+                <option value="04">Abril</option>
+                <option value="05">Maio</option>
+                <option value="06">Junho</option>
+                <option value="07">Julho</option>
+                <option value="08">Agosto</option>
+                <option value="09">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+        </div>
+        <br>
+        <table id="transactionsTable">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="pagination">
+            <button id="prevPage" onclick="changePage(-1)">Anterior</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage" onclick="changePage(1)">Próximo</button>
+        </div>
+        <br>
+        <section class="charts">
+            <h2>Gráficos</h2>
+            <div class="chart-container">
+                <canvas id="dividaChart"></canvas>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

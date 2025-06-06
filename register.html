@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Despesas/Ganhos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="register.html">Registrar Despesas/Ganhos</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Registrar Despesas/Ganhos</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Registrar Nova Transação</h2>
+            <form id="transactionForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" placeholder="Ex: Aluguel" required>
+                </div>
+                <div class="form-group">
+                    <label for="value">Valor (€):</label>
+                    <input type="number" id="value" step="0.01" placeholder="Ex: 500.00" required>
+                </div>
+                <div class="form-group">
+                    <label for="type">Tipo:</label>
+                    <select id="type" required>
+                        <option value="Despesa">Despesa</option>
+                        <option value="Rendimento">Rendimento</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Data:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <button type="submit">Salvar Transação</button>
+            </form>
+        </section>
+
+        <section class="json-section">
+            <h2>Conteúdo Atualizado do data.json</h2>
+            <pre id="jsonDataDisplay"></pre>
+            <button id="copyJsonButton">Copiar JSON</button>
+        </section>
+    </main>
+
+    <script src="register.js"></script>
+</body>
+</html>
